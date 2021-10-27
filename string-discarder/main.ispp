@@ -1,0 +1,12 @@
+# String Discarder
+# Asks user for input then returns the input up to ":"
+
+printf("Type anything in the box below. I'm going to try and delimit it.\n", ">>> ");
+
+var input = read();
+
+var input_s = locate(input, ":");
+
+var sub = substr(input, 0, input_s);
+
+printf("Here you go! ", sub, "\n");
